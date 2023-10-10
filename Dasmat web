@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASMAT Catering Services</title>
+    <style>
+        body {
+            font-family: Script ;
+            margin: 3;
+            padding: 0;
+            background-color: display:none;
+            background-image: url("img/logop.html.png");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        
+        header {
+            background-color: #00bb0319;
+            color: #7aff00;
+            text-align: center;
+            padding: 0.5rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.1);
+            transform: rotate(-1deg);
+            margin-top: 20px;
+        }
+
+        .services {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            font-size: 1.3rem;
+        }
+
+        .Whatsapp {
+            color: #25d366;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form textarea {
+            resize: vertical;
+        }
+
+        form button {
+            background-color: #f39c12;
+            color: Green;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+
+        .image-container img {
+            width: 30%;
+            transform: rotate(1deg);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to DASMAT Catering Services</h1>
+    </header>
+
+    <div class="container">
+        <h2>Introducing</h2>
+        <p class="services">We offer catering services for your large parties and events. Enjoy delicious meals cooked by our experienced chefs.</p>
+        <p class="services">Slide in below 👇🏻and let us take care of your catering needs.</p>
+
+        <h2>Contact Information</h2>
+        <p class="contact-info">For inquiries and bookings, you can reach us on WhatsApp:</p>
+        <p class="contact-info">
+            WhatsApp: <span class="whatsapp">+2348118554961</span></p>
+
+        <h2>Contact Us</h2>
+        <form action="send_email.php" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="image-container">
+            <img src="img/Jollof.html.png" alt="Jollof and  Fried Rice">
+            <img src="img/Amala.html.png" alt="Amala and Ewedu">
+            <img src="img/Samosa.html.png" alt="Pastries">
+        </div>
+    </div>
+</body>
+</html>
+
